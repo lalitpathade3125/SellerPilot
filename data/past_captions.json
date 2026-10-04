@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic captions in SellerPilot Studio's warm, small-batch brand voice.",
+  "captions": [
+    {
+      "product_id": "P001",
+      "caption": "A little moonlight for your everyday ✨ Freshwater pearls meet easy, golden hoops—hand-finished slowly, worn on repeat.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#HandmadeInIndia",
+        "#PearlEarrings",
+        "#EverydayJewellery"
+      ]
+    },
+    {
+      "product_id": "P002",
+      "caption": "A tiny terracotta sunrise, made by hand just for your ears 🌞 Each little sun carries its own brushstroke.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#TerracottaJewellery",
+        "#MadeByHand",
+        "#SlowMade"
+      ]
+    },
+    {
+      "product_id": "P004",
+      "caption": "A soft pop of gulabi, a touch of old-world charm 🌸 Meet the enamel drops we keep reaching for.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#Meenakari",
+        "#IndianHandmade",
+        "#ArtisanJewellery"
+      ]
+    },
+    {
+      "product_id": "P005",
+      "caption": "A little green, a little glow 💚 Riverstone is here to bring a calm sparkle to your everyday stack.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#HandmadeJewellery",
+        "#GreenAventurine",
+        "#EverydayStyle"
+      ]
+    },
+    {
+      "product_id": "P007",
+      "caption": "Keep a wildflower close 🌼 A tiny hand-finished bloom on a chain made for layering, gifting, and little everyday joys.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#WildflowerJewellery",
+        "#SmallBatchMade",
+        "#MadeInIndia"
+      ]
+    },
+    {
+      "product_id": "P009",
+      "caption": "Your new wear-everywhere pair 🤍 Simple little huggies, finished in gold or silver and ready for the daily rotation.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#HuggieEarrings",
+        "#EverydayJewellery",
+        "#SlowFashion"
+      ]
+    },
+    {
+      "product_id": "P011",
+      "caption": "Earthy, easy, and full of character 🌾 Our Mitti beads are shaped and painted by hand—no two necklaces exactly alike.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#TerracottaBeads",
+        "#HandmadeInIndia",
+        "#ArtisanMade"
+      ]
+    },
+    {
+      "product_id": "P012",
+      "caption": "A little celestial detail, no piercing needed ✨ Slide on the starry ear cuff and let your everyday look do its thing.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#EarCuff",
+        "#NoPiercing",
+        "#HandmadeJewellery"
+      ]
+    },
+    {
+      "product_id": "P014",
+      "caption": "Monsoon skies, caught in glass 🌧️ Four translucent bangles with that just-after-the-rain kind of glow.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#GlassBangles",
+        "#SmallBatchJewellery",
+        "#MadeWithCare"
+      ]
+    },
+    {
+      "product_id": "P015",
+      "caption": "Marigold mornings, made to move 🌼 Our little jhumkas bring hand-painted petals and a soft bead fringe to the celebration.",
+      "hashtags": [
+        "#SellerPilotStudio",
+        "#JhumkaLove",
+        "#IndianHandmade",
+        "#FestiveStyle"
+      ]
+    }
+  ]
+}
