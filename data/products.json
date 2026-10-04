@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic handmade-jewellery catalog and opening stock snapshot for local development.",
+  "products": [
+    {
+      "id": "P001",
+      "name": "Moonlit Pearl Hoops",
+      "price": 1499,
+      "category": "earrings",
+      "material": "freshwater pearl, gold-plated brass",
+      "description": "Lightweight hoops with a single luminous freshwater pearl, hand-finished in Jaipur.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "gold"
+      ],
+      "image_path": "images/moonlit-pearl-hoops.jpg",
+      "stock_quantity": 8,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P002",
+      "name": "Terracotta Sun Studs",
+      "price": 699,
+      "category": "earrings",
+      "material": "hand-shaped terracotta, sterling silver posts",
+      "description": "Tiny sunburst studs shaped and painted by hand; each pair has subtle differences.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "rust",
+        "cream"
+      ],
+      "image_path": "images/terracotta-sun-studs.jpg",
+      "stock_quantity": 2,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P003",
+      "name": "Indigo Threader Earrings",
+      "price": 1199,
+      "category": "earrings",
+      "material": "brass, indigo-dyed cotton thread",
+      "description": "Slim brass threaders wrapped with indigo cotton for an easy pop of colour.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "indigo"
+      ],
+      "image_path": "images/indigo-threaders.jpg",
+      "stock_quantity": 0,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P004",
+      "name": "Gulabi Meenakari Drops",
+      "price": 1899,
+      "category": "earrings",
+      "material": "brass, enamel",
+      "description": "Petite teardrop earrings with pink and ivory hand-painted enamel detail.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "rose",
+        "ivory"
+      ],
+      "image_path": "images/gulabi-drops.jpg",
+      "stock_quantity": 5,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P005",
+      "name": "Riverstone Cuff",
+      "price": 2299,
+      "category": "bracelets",
+      "material": "gold-plated brass, green aventurine",
+      "description": "Open cuff with a softly polished green aventurine stone; gently adjustable.",
+      "sizes": [
+        "Small",
+        "Medium"
+      ],
+      "colors": [
+        "gold",
+        "green"
+      ],
+      "image_path": "images/riverstone-cuff.jpg",
+      "stock_quantity": 4,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P006",
+      "name": "Tiny Tide Anklet",
+      "price": 899,
+      "category": "anklets",
+      "material": "gold-plated brass",
+      "description": "Fine chain anklet dotted with little wave charms and a two-inch extender.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "gold"
+      ],
+      "image_path": "images/tiny-tide-anklet.jpg",
+      "stock_quantity": 11,
+      "posted_on_instagram": false
+    },
+    {
+      "id": "P007",
+      "name": "Wildflower Charm Necklace",
+      "price": 1799,
+      "category": "necklaces",
+      "material": "gold-plated brass, glass enamel",
+      "description": "A dainty wildflower charm on a 18-inch chain with a 2-inch extender.",
+      "sizes": [
+        "18 inch"
+      ],
+      "colors": [
+        "gold",
+        "multicolor"
+      ],
+      "image_path": "images/wildflower-necklace.jpg",
+      "stock_quantity": 3,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P008",
+      "name": "Kundan Garden Choker",
+      "price": 3499,
+      "category": "necklaces",
+      "material": "brass, kundan glass stones, cotton dori",
+      "description": "Festive choker with hand-set kundan-style stones and adjustable soft dori ties.",
+      "sizes": [
+        "Adjustable"
+      ],
+      "colors": [
+        "ruby",
+        "emerald"
+      ],
+      "image_path": "images/kundan-garden-choker.jpg",
+      "stock_quantity": 0,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P009",
+      "name": "Everyday Huggie Pair",
+      "price": 999,
+      "category": "earrings",
+      "material": "gold-plated stainless steel",
+      "description": "Simple hinged huggies made for everyday wear; sold as a pair.",
+      "sizes": [
+        "10 mm",
+        "12 mm"
+      ],
+      "colors": [
+        "gold",
+        "silver"
+      ],
+      "image_path": "images/everyday-huggies.jpg",
+      "stock_quantity": 14,
+      "posted_on_instagram": false
+    },
+    {
+      "id": "P010",
+      "name": "Daisy Chain Bracelet",
+      "price": 1299,
+      "category": "bracelets",
+      "material": "gold-plated brass, glass beads",
+      "description": "A slim bracelet with tiny white daisy beads and a 1.5-inch extender.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "gold",
+        "white"
+      ],
+      "image_path": "images/daisy-chain-bracelet.jpg",
+      "stock_quantity": 1,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P011",
+      "name": "Mitti Bead Necklace",
+      "price": 1599,
+      "category": "necklaces",
+      "material": "terracotta beads, cotton cord",
+      "description": "Lightweight hand-painted terracotta beads on an adjustable cotton cord.",
+      "sizes": [
+        "Adjustable"
+      ],
+      "colors": [
+        "clay",
+        "cream"
+      ],
+      "image_path": "images/mitti-bead-necklace.jpg",
+      "stock_quantity": 6,
+      "posted_on_instagram": false
+    },
+    {
+      "id": "P012",
+      "name": "Celestial Ear Cuff",
+      "price": 799,
+      "category": "earrings",
+      "material": "gold-plated brass",
+      "description": "A no-piercing ear cuff with tiny star details; gently squeezes to fit.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "gold"
+      ],
+      "image_path": "images/celestial-ear-cuff.jpg",
+      "stock_quantity": 7,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P013",
+      "name": "Rose Quartz Lariat",
+      "price": 2799,
+      "category": "necklaces",
+      "material": "rose quartz, gold-plated brass chain",
+      "description": "Long lariat necklace with a natural rose quartz drop; stone shades vary naturally.",
+      "sizes": [
+        "28 inch"
+      ],
+      "colors": [
+        "blush",
+        "gold"
+      ],
+      "image_path": "images/rose-quartz-lariat.jpg",
+      "stock_quantity": 2,
+      "posted_on_instagram": false
+    },
+    {
+      "id": "P014",
+      "name": "Monsoon Glass Bangles",
+      "price": 1399,
+      "category": "bracelets",
+      "material": "hand-blown glass",
+      "description": "Set of four slim translucent bangles inspired by the first monsoon rain.",
+      "sizes": [
+        "2.4",
+        "2.6",
+        "2.8"
+      ],
+      "colors": [
+        "teal",
+        "smoke"
+      ],
+      "image_path": "images/monsoon-bangles.jpg",
+      "stock_quantity": 9,
+      "posted_on_instagram": true
+    },
+    {
+      "id": "P015",
+      "name": "Marigold Bloom Jhumkas",
+      "price": 2499,
+      "category": "earrings",
+      "material": "brass, enamel, glass beads",
+      "description": "Small bell-shaped jhumkas with marigold enamel petals and delicate bead fringe.",
+      "sizes": [
+        "One size"
+      ],
+      "colors": [
+        "saffron",
+        "green"
+      ],
+      "image_path": "images/marigold-jhumkas.jpg",
+      "stock_quantity": 5,
+      "posted_on_instagram": true
+    }
+  ]
+}
