@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic historical customer DM and seller-reply examples for development and demos.",
+  "exchanges": [
+    {
+      "message_id": "DM001",
+      "customer_id": "C001",
+      "channel": "instagram",
+      "text": "Hi! are the Moonlit Pearl Hoops real pearls?",
+      "seller_reply": "Hi! Yes, they use freshwater pearls, so each one has its own lovely little shape ✨",
+      "timestamp": "2025-01-01T09:15:00+05:30"
+    },
+    {
+      "message_id": "DM002",
+      "customer_id": "C002",
+      "channel": "whatsapp",
+      "text": "Do you have Terracotta Sun Studs in cream?",
+      "seller_reply": "We do have the cream pair listed. I can check today's availability for you before you place an order 🌼",
+      "timestamp": "2025-02-02T10:15:00+05:30"
+    },
+    {
+      "message_id": "DM003",
+      "customer_id": "C003",
+      "channel": "instagram",
+      "text": "Can I get the indigo threader earrings by Friday?",
+      "seller_reply": "I’m sorry, the Indigo Threaders are sold out at the moment. I can let you know when they’re back 💙",
+      "timestamp": "2025-03-03T11:15:00+05:30"
+    },
+    {
+      "message_id": "DM004",
+      "customer_id": "C004",
+      "channel": "instagram",
+      "text": "price for the Gulabi drops?",
+      "seller_reply": "The Gulabi Meenakari Drops are ₹1,899, handmade with enamel details 🌸",
+      "timestamp": "2025-04-04T12:15:00+05:30"
+    },
+    {
+      "message_id": "DM005",
+      "customer_id": "C005",
+      "channel": "whatsapp",
+      "text": "Will Riverstone cuff fit a small wrist?",
+      "seller_reply": "It comes in Small and Medium and is gently adjustable. Share your wrist measurement and I’ll help you choose 💚",
+      "timestamp": "2025-05-05T13:15:00+05:30"
+    },
+    {
+      "message_id": "DM006",
+      "customer_id": "C006",
+      "channel": "instagram",
+      "text": "Can you do 25 Wildflower necklaces for bridesmaids?",
+      "seller_reply": "That sounds beautiful! For a bulk order of 25, I’ll check with the maker on timing and availability and get back to you 🌼",
+      "timestamp": "2025-06-06T14:15:00+05:30"
+    },
+    {
+      "message_id": "DM007",
+      "customer_id": "C007",
+      "channel": "instagram",
+      "text": "Your price is too much. give me 50% off",
+      "seller_reply": "I understand wanting to find the right price. Our pieces are made in small batches, so I can’t offer that discount, but I’m happy to suggest something within your budget 🤍",
+      "timestamp": "2025-07-07T15:15:00+05:30"
+    },
+    {
+      "message_id": "DM008",
+      "customer_id": "C008",
+      "channel": "whatsapp",
+      "text": "Is the kundan choker available??",
+      "seller_reply": "Let me check the current stock for you. The Kundan Garden Choker is a small-batch piece, and I don’t want to promise before confirming ✨",
+      "timestamp": "2025-08-08T16:15:00+05:30"
+    },
+    {
+      "message_id": "DM009",
+      "customer_id": "C009",
+      "channel": "instagram",
+      "text": "I got my bracelet and one bead fell off. This is ridiculous",
+      "seller_reply": "I’m really sorry that happened. That’s not the experience we want you to have. Please send your order number and a photo, and I’ll arrange for the team to help 🤍",
+      "timestamp": "2025-09-09T17:15:00+05:30"
+    },
+    {
+      "message_id": "DM010",
+      "customer_id": "C010",
+      "channel": "instagram",
+      "text": "Is this still available?",
+      "seller_reply": "Happy to check! Which piece are you asking about? You can send me its name or a screenshot 😊",
+      "timestamp": "2025-10-10T18:15:00+05:30"
+    },
+    {
+      "message_id": "DM011",
+      "customer_id": "C011",
+      "channel": "whatsapp",
+      "text": "How long does shipping take to Pune?",
+      "seller_reply": "We usually dispatch in 2–3 working days; delivery time depends on the courier and your pin code. Share it and I can help estimate 🌿",
+      "timestamp": "2025-11-11T09:15:00+05:30"
+    },
+    {
+      "message_id": "DM012",
+      "customer_id": "C012",
+      "channel": "instagram",
+      "text": "Can you make these earrings in silver instead?",
+      "seller_reply": "Thanks for asking! These are currently made in gold-tone brass. I can pass along your silver-finish request to our maker ✨",
+      "timestamp": "2025-12-12T10:15:00+05:30"
+    },
+    {
+      "message_id": "DM013",
+      "customer_id": "C013",
+      "channel": "instagram",
+      "text": "Do the Everyday Huggies come in 10mm?",
+      "seller_reply": "They’re offered in both 10 mm and 12 mm. Tell me which finish you prefer and I’ll check availability for you 🤍",
+      "timestamp": "2025-01-13T11:15:00+05:30"
+    },
+    {
+      "message_id": "DM014",
+      "customer_id": "C014",
+      "channel": "whatsapp",
+      "text": "I need 8 Daisy Chain bracelets urgently for tomorrow",
+      "seller_reply": "I’ll check with the team on stock and dispatch timing for eight pieces. I can’t promise tomorrow until we confirm both 🌼",
+      "timestamp": "2025-02-14T12:15:00+05:30"
+    },
+    {
+      "message_id": "DM015",
+      "customer_id": "C015",
+      "channel": "instagram",
+      "text": "Are the Mitti beads heavy?",
+      "seller_reply": "They’re made from terracotta, but designed to feel light for everyday wear. Each bead is hand-painted, so little variations are part of the charm 🌾",
+      "timestamp": "2025-03-15T13:15:00+05:30"
+    },
+    {
+      "message_id": "DM016",
+      "customer_id": "C016",
+      "channel": "instagram",
+      "text": "Can I return the necklace if I don't like it?",
+      "seller_reply": "I can help with the return policy. Please share your order number and I’ll have the team confirm the options for your purchase 🤍",
+      "timestamp": "2025-04-16T14:15:00+05:30"
+    },
+    {
+      "message_id": "DM017",
+      "customer_id": "C017",
+      "channel": "whatsapp",
+      "text": "Is the ear cuff for pierced ears?",
+      "seller_reply": "No piercing needed for the Celestial Ear Cuff ✨ It gently sits on the outer ear.",
+      "timestamp": "2025-05-17T15:15:00+05:30"
+    },
+    {
+      "message_id": "DM018",
+      "customer_id": "C018",
+      "channel": "instagram",
+      "text": "Do you have these in a larger bangle size?",
+      "seller_reply": "The Monsoon Glass Bangles come in 2.4, 2.6, and 2.8. If you share your usual bangle size, I can help check the closest fit 🌧️",
+      "timestamp": "2025-06-18T16:15:00+05:30"
+    },
+    {
+      "message_id": "DM019",
+      "customer_id": "C019",
+      "channel": "instagram",
+      "text": "rose quartz lariat price?",
+      "seller_reply": "The Rose Quartz Lariat is ₹2,799, with a natural rose quartz drop in a soft blush tone 🌷",
+      "timestamp": "2025-07-19T17:15:00+05:30"
+    },
+    {
+      "message_id": "DM020",
+      "customer_id": "C020",
+      "channel": "whatsapp",
+      "text": "Can I pay cash on delivery?",
+      "seller_reply": "Please share your delivery pin code and I’ll confirm which payment options are available for your location 😊",
+      "timestamp": "2025-08-20T18:15:00+05:30"
+    },
+    {
+      "message_id": "DM021",
+      "customer_id": "C021",
+      "channel": "instagram",
+      "text": "I ordered last week and no update. scam page?",
+      "seller_reply": "I’m sorry you’ve been left waiting. Please DM your order number and I’ll ask our team to check the tracking right away 🤍",
+      "timestamp": "2025-09-21T09:15:00+05:30"
+    },
+    {
+      "message_id": "DM022",
+      "customer_id": "C022",
+      "channel": "instagram",
+      "text": "Need two marigold jhumkas for a wedding this weekend",
+      "seller_reply": "I’ll check whether two pairs are available and whether delivery can reach you in time. What’s your pin code? 🌼",
+      "timestamp": "2025-10-22T10:15:00+05:30"
+    },
+    {
+      "message_id": "DM023",
+      "customer_id": "C023",
+      "channel": "whatsapp",
+      "text": "Do you ship to Goa?",
+      "seller_reply": "We ship across India. Send your pin code and I can help with an estimated delivery window 🌿",
+      "timestamp": "2025-11-23T11:15:00+05:30"
+    },
+    {
+      "message_id": "DM024",
+      "customer_id": "C024",
+      "channel": "instagram",
+      "text": "Can I get a custom name charm added to this?",
+      "seller_reply": "Custom pieces need a quick check with our maker. Tell me what you have in mind and I’ll pass the request along ✨",
+      "timestamp": "2025-12-24T12:15:00+05:30"
+    },
+    {
+      "message_id": "DM025",
+      "customer_id": "C025",
+      "channel": "instagram",
+      "text": "Is the pearl necklace waterproof?",
+      "seller_reply": "We recommend keeping plated pieces and pearls away from water, perfume, and lotions to help them stay lovely longer 🤍",
+      "timestamp": "2025-01-25T13:15:00+05:30"
+    },
+    {
+      "message_id": "DM026",
+      "customer_id": "C026",
+      "channel": "whatsapp",
+      "text": "I want 12 pairs of the sun studs for return gifts, any lower rate?",
+      "seller_reply": "Thanks for thinking of us for your return gifts! I’ll check bulk pricing and stock for 12 pairs with the team and get back to you 🌼",
+      "timestamp": "2025-02-26T14:15:00+05:30"
+    },
+    {
+      "message_id": "DM027",
+      "customer_id": "C027",
+      "channel": "instagram",
+      "text": "the clasp on my anklet broke after one day!!",
+      "seller_reply": "I’m so sorry about the clasp. Please send your order number and a clear photo; our team will look into a repair or next step with you 🤍",
+      "timestamp": "2025-03-27T15:15:00+05:30"
+    },
+    {
+      "message_id": "DM028",
+      "customer_id": "C028",
+      "channel": "instagram",
+      "text": "Which earrings are under 1000?",
+      "seller_reply": "We have a few lovely options in that range. Tell me whether you prefer studs, hoops, or something without a piercing and I can narrow it down 😊",
+      "timestamp": "2025-04-01T16:15:00+05:30"
+    },
+    {
+      "message_id": "DM029",
+      "customer_id": "C029",
+      "channel": "whatsapp",
+      "text": "Can you reserve the Riverstone cuff till tomorrow?",
+      "seller_reply": "I can check whether we can hold one for you. Which size would you like? 💚",
+      "timestamp": "2025-05-02T17:15:00+05:30"
+    },
+    {
+      "message_id": "DM030",
+      "customer_id": "C030",
+      "channel": "instagram",
+      "text": "Thanks, got the huggies! love them",
+      "seller_reply": "That makes us so happy to hear! Thank you for choosing a little handmade piece from our studio 🤍",
+      "timestamp": "2025-06-03T18:15:00+05:30"
+    }
+  ]
+}
