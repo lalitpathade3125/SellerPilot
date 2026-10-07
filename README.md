@@ -59,6 +59,18 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
+### Gemini Chat Responses
+
+SellerPilot can use Gemini to write natural, context-aware commerce replies while inventory and order facts remain grounded in the existing agent. Create a Gemini API key in Google AI Studio and add it to your local `.env`:
+
+```env
+GEMINI_API_KEY=your-key-here
+USE_GEMINI_FOR_COMMERCE=true
+GEMINI_MODEL=gemini-3.8-flash
+```
+
+Keep `USE_MOCKS=true` if you want mock inventory/content services; this setting does not disable Gemini chat replies. If no Gemini key is configured, the commerce agent falls back to its deterministic templates. The app does not track sales rankings or place orders, so it will not claim a bestseller or say an order was placed.
+
 ### 3. Running SellerPilot (Complete Quickstart)
 
 ```bash
