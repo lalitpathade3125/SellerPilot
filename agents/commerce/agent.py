@@ -22,6 +22,7 @@ Architectural Viva Notes:
 import re
 import logging
 from core.config import settings
+from agents.commerce.gemini_responder import GeminiCommerceResponder
 from core.interfaces import CommerceService, InventoryService
 from core.schemas import AgentAction, IncomingMessage, Intent, Product, StockStatus
 
@@ -67,6 +68,11 @@ PRICE_KEYWORDS = [
     "price", "how much", "cost", "rate", "pricy", "expensive",
 ]
 
+BESTSELLER_KEYWORDS = [
+    "most sold", "most selled", "best seller", "best-seller", "bestseller",
+    "best selling", "best-selling", "most popular", "popular product",
+]
+
 
 class ConversationalCommerceAgent(CommerceService):
     """Conversational Commerce Agent answering customer DMs across Instagram and WhatsApp."""
@@ -76,8 +82,30 @@ class ConversationalCommerceAgent(CommerceService):
             confidence_threshold if confidence_threshold is not None
             else settings.ESCALATION_CONFIDENCE_THRESHOLD
         )
+        self.gemini_responder = GeminiCommerceResponder()
 
     def handle_message(self, msg: IncomingMessage, inventory: InventoryService) -> AgentAction:
+        """Handle one DM and personalize the grounded result with Gemini when configured."""
+        return self.handle_message_with_context(msg, inventory, [])
+
+    def handle_message_with_context(
+        self,
+        msg: IncomingMessage,
+        inventory: InventoryService,
+        conversation_history: list[dict[str, object]] | None = None,
+    ) -> AgentAction:
+        """Use recent turns for natural follow-up replies without changing the frozen protocol."""
+        action = self._handle_message_rules(msg, inventory)
+        generated_text = self.gemini_responder.generate_reply(
+            msg=msg,
+            action=action,
+            conversation_history=conversation_history,
+        )
+        if generated_text:
+            return action.model_copy(update={"response_text": generated_text})
+        return action
+
+    def _handle_message_rules(self, msg: IncomingMessage, inventory: InventoryService) -> AgentAction:
         """Process inbound customer DM and return structured AgentAction.
 
         Architectural Flow:
@@ -176,6 +204,21 @@ class ConversationalCommerceAgent(CommerceService):
                     "We dispatch all studio orders within 24-48 business hours with tracked delivery across the country! 📦 "
                     "Standard delivery usually takes 3 to 5 business days. We also offer complimentary shipping on all "
                     "orders above ₹1,500. ✨"
+                ),
+                escalate=False,
+                escalation_reason=None,
+                confidence=0.95,
+            )
+
+        # Sales rankings are not stored in the product or stock contract.
+        if any(phrase in text_lower for phrase in BESTSELLER_KEYWORDS):
+            return AgentAction(
+                agent="commerce",
+                intent=Intent.other,
+                product_id=None,
+                response_text=(
+                    "Sales rankings are not available in our catalog, so I can't verify which piece has sold the most. "
+                    "I can still help you choose a style or check current stock for a specific piece."
                 ),
                 escalate=False,
                 escalation_reason=None,
