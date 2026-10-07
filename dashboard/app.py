@@ -509,6 +509,13 @@ elif page == "Conversations":
         msg_to_send = quick_inquiry or (typed_msg if send_pressed and typed_msg.strip() else None)
 
         if msg_to_send:
+            previous_history = [
+                {
+                    "role": "user" if item.get("sender") == "customer" else "assistant",
+                    "text": item.get("text", ""),
+                }
+                for item in curr_conv["messages"][-12:]
+            ]
             curr_conv["messages"].append({
                 "sender": "customer",
                 "text": msg_to_send,
@@ -523,7 +530,13 @@ elif page == "Conversations":
                 text=msg_to_send,
                 timestamp=datetime.utcnow(),
             )
-            event = Event(type="new_dm", payload={"message": msg_obj.model_dump()})
+            event = Event(
+                type="new_dm",
+                payload={
+                    "message": msg_obj.model_dump(),
+                    "conversation_history": previous_history,
+                },
+            )
             action_res: AgentAction = orchestrator.process_event(event)  # type: ignore
 
             curr_conv["messages"].append({
