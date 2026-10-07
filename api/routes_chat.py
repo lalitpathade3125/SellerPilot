@@ -62,6 +62,21 @@ def handle_incoming_message(
         db.add(conversation)
         db.flush()  # Allocate conversation.id
 
+    # Load earlier turns before storing the current message so follow-ups have context.
+    previous_records = (
+        db.query(MessageORM)
+        .filter(MessageORM.conversation_id == conversation.id)
+        .order_by(MessageORM.timestamp.asc())
+        .all()
+    )
+    conversation_history = [
+        {
+            "role": "user" if record.sender == "customer" else "assistant",
+            "text": record.text,
+        }
+        for record in previous_records[-12:]
+    ]
+
     # 3. Store Incoming Customer Message
     customer_msg_record = MessageORM(
         conversation_id=conversation.id,
@@ -79,7 +94,13 @@ def handle_incoming_message(
     if not orchestrator:
         raise HTTPException(status_code=500, detail="Orchestrator not initialized on app state.")
 
-    event = Event(type="new_dm", payload={"message": msg.model_dump()})
+    event = Event(
+        type="new_dm",
+        payload={
+            "message": msg.model_dump(),
+            "conversation_history": conversation_history,
+        },
+    )
     result = orchestrator.process_event(event)
 
     if not isinstance(result, AgentAction):
