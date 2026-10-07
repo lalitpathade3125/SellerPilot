@@ -120,13 +120,18 @@ class SellerPilotOrchestrator(Orchestrator):
         if not self.inventory or not self.content:
             raise RuntimeError("Orchestrator must have inventory and content services injected via build_graph().")
 
-        # Initialize fresh state with default catalog, brand voice, and audit trail
+        event_payload = event.payload if isinstance(event.payload, dict) else {}
+        conversation_history = event_payload.get("conversation_history", [])
+        if not isinstance(conversation_history, list):
+            conversation_history = []
+
+        # Initialize state with request-provided conversation context and a fresh audit trail
         initial_state: SellerPilotState = {
             "current_event": event,
             "event_type": event.type,
             "catalog": SAMPLE_PRODUCTS,
             "brand_voice": DEFAULT_BRAND_VOICE,
-            "conversation_history": [],
+            "conversation_history": conversation_history[-12:],
             "log_trail": [f"[{datetime.utcnow().isoformat()}] [ORCHESTRATOR_START] Dispatched event type='{event.type}'"],
             "escalated": False,
         }
@@ -192,7 +197,12 @@ class SellerPilotOrchestrator(Orchestrator):
             )
 
         # Execute commerce agent with dependency injection
-        action: AgentAction = self.commerce.handle_message(msg, self.inventory)  # type: ignore
+        history = list(state.get("conversation_history", []))
+        context_handler = getattr(self.commerce, "handle_message_with_context", None)
+        if callable(context_handler):
+            action: AgentAction = context_handler(msg, self.inventory, history)  # type: ignore
+        else:
+            action = self.commerce.handle_message(msg, self.inventory)  # type: ignore
 
         log_entry = (
             f"[{datetime.utcnow().isoformat()}] [COMMERCE_NODE] Handled DM: "
