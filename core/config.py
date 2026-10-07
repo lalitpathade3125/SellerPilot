@@ -17,6 +17,11 @@ except ImportError:
 class Settings:
     """Application settings with defaults optimized for local development and testing."""
 
+    # Gemini natural-language commerce responses (separate from the inventory/content mock toggle)
+    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+    USE_GEMINI_FOR_COMMERCE: bool = os.getenv("USE_GEMINI_FOR_COMMERCE", "true").lower() in ("true", "1", "yes")
+
     # Claude LLM API
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
 
